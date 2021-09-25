@@ -21,12 +21,18 @@ Run the project
 node server.ts
 ```
 
-Open your browser on [http://localhost:8000](http://localhost:8000).
+Open your browser on [http://localhost:8000](http://localhost:8000). to see success maessage
+
+````json
+{
+"message": "Ok"
+}
+````
 
 
 ## API Endpoints
 
-## GET /api/beers
+### GET /api/beers
 
 Get a list of all beers
 
@@ -194,7 +200,7 @@ Get a list of all beers
 }
 ```
 
-## GET /api/beer/{id}
+### GET /api/beer/{id}
 
 Get beer information by beer id
 
@@ -210,7 +216,7 @@ Get beer information by beer id
 }
 ```
 
-## POST /api/beer/
+### POST /api/beer/
 
 To create a new beer based on POST data (x-www-form-url-encoded)
 
@@ -222,7 +228,7 @@ To create a new beer based on POST data (x-www-form-url-encoded)
 ![Postman example](https://developerhowto.com/wp-content/uploads/2018/12/PostMan-POST-request.png)
 
 
-## PATCH /api/beer/{id}
+### PATCH /api/beer/{id}
 
 To update beer data by id, based on POST data (x-www-form-url-encoded)
 
@@ -232,7 +238,7 @@ To update beer data by id, based on POST data (x-www-form-url-encoded)
 
 You can send only one attribute to update, the rest of the info remains the same. 
 
-## DELETE /api/beer/{id}
+### DELETE /api/beer/{id}
 
 To remove a beer from the database by beer id. 
 
